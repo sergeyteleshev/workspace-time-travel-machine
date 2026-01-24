@@ -3,7 +3,7 @@
   "name": "git-workspace-helper",
   "displayName": "Git Workspace Helper",
   "description": "Manage workspace repositories via git without routine using one command",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "engines": {
     "vscode": "^1.92.0"

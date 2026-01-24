@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.2
+
+Removed all CVE
+
 ### 1.0.1
 
 - Fixes "Merge to current branch" feature
