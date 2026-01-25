@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.0.4
+
+- Added "Rename Branch" feature
+- Fixed all security vulnerabilities
+- Updated dependency resolutions for security patches
+
 ### 1.0.3
 
 Removed more CVE

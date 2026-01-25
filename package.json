@@ -3,7 +3,7 @@
   "name": "git-workspace-helper",
   "displayName": "Git Workspace Helper",
   "description": "Manage workspace repositories via git without routine using one command",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "engines": {
     "vscode": "^1.92.0"
@@ -46,6 +46,11 @@
         "command": "git-workspace-helper.deleteBranch",
         "title": "Git Workspace Helper: Delete Branch",
         "icon": "$(git-branch-delete)"
+      },
+      {
+        "command": "git-workspace-helper.renameBranch",
+        "title": "Git Workspace Helper: Rename Branch",
+        "icon": "$(edit)"
       },
       {
         "command": "git-workspace-helper.createTag",
@@ -196,6 +201,10 @@
           "when": "!scmProvider"
         },
         {
+          "command": "git-workspace-helper.renameBranch",
+          "when": "!scmProvider"
+        },
+        {
           "command": "git-workspace-helper.merge",
           "when": "!scmProvider"
         }
@@ -343,7 +352,11 @@
   "resolutions": {
     "glob": ">=10.5.0",
     "js-yaml": ">=4.1.1",
-    "esbuild": ">=0.25.0"
+    "esbuild": ">=0.27.2",
+    "diff": ">=5.2.2",
+    "@eslint/plugin-kit": ">=0.3.4",
+    "brace-expansion": ">=2.0.2",
+    "minimatch": ">=10.0.1"
   },
   "dependencies": {
     "@wroud/di": "^0",

@@ -20,12 +20,14 @@ import { DeleteRemoteFeatureService } from './DeleteRemoteFeatureService.js';
 import { GitStashChangesFeatureService } from './GitStashChangesFeatureService.js';
 import { GitApplyPopStashFeatureService } from './GitApplyPopStashFeatureService.js';
 import { GitStashDropFeatureService } from './GitStashDropFeatireService.js';
+import { GitRenameBranchFeatureService } from './GitRenameBranchFeatureService.js';
 
 const SERVICES: SingleServiceImplementation<CommandService>[] = [
   GitCheckoutFeatureService,
   GitCommitFeatureService,
   GitCreateBranchFeatureService,
   GitDeleteBranchFeatureService,
+  GitRenameBranchFeatureService,
   GitDiscardChangesFeaturesService,
   ConfigureActiveRepositoriesFeatureService,
   GitMergeFeatureService,
